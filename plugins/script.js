@@ -1,3 +1,5 @@
+var base_url = window.location.origin;
+
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const text = urlParams.get('text')
@@ -20,7 +22,7 @@ function makeCode() {
         // window.location.href = img;
         canvas.toBlob(blob => {
             const objectURL = URL.createObjectURL(blob);
-            window.open(objectURL);
+            window.open(obase_url + bjectURL);
         }, 'image/png');
     } else {
         qrcode.makeCode(elText.value);
