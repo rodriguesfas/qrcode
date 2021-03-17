@@ -22,7 +22,7 @@ function makeCode() {
         // window.location.href = img;
         canvas.toBlob(blob => {
             const objectURL = URL.createObjectURL(blob);
-            window.open(obase_url + bjectURL);
+            window.open(bjectURL);
         }, 'image/png');
     } else {
         qrcode.makeCode(elText.value);
